@@ -1,5 +1,5 @@
-import FlexDimensions from './screens/FlexDimensions';
+import PercentageDimensions from './screens/PercentageDimensions';
 
 export default function App() {
-  return <FlexDimensions />;
+  return <PercentageDimensions />;
 }
