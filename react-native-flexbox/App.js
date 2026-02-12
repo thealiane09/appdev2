@@ -1,10 +1,10 @@
 import { StyleSheet, SafeAreaView } from 'react-native';
-import FlexDirectionBasics from './components/FlexDirection';
+import DirectionLayout from './components/LayoutDirection';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <FlexDirectionBasics />
+      <DirectionLayout />
     </SafeAreaView>
   );
 }
