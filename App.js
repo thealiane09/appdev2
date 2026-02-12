@@ -1,5 +1,5 @@
-import StyleScreen from './screens/StyleScreen';
+import FixedDimensions from './screens/FixedDimensions';
 
 export default function App() {
-  return <StyleScreen />;
+  return <FixedDimensions />;
 }
