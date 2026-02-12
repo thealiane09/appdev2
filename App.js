@@ -1,5 +1,5 @@
-import FixedDimensions from './screens/FixedDimensions';
+import FlexDimensions from './screens/FlexDimensions';
 
 export default function App() {
-  return <FixedDimensions />;
+  return <FlexDimensions />;
 }
