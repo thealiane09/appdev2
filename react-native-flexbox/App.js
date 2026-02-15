@@ -1,10 +1,10 @@
 import { StyleSheet, SafeAreaView } from 'react-native';
-import AlignContentLayout from './components/AlignContent';
+import FlexWrapLayout from './components/FlexWrap';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <AlignContentLayout />
+      <FlexWrapLayout />
     </SafeAreaView>
   );
 }
