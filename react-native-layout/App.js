@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
+import Todo from './screens/Todo';
 
 export default function App() {
   // Controls which screen is currently shown
@@ -16,8 +17,10 @@ export default function App() {
     <View style={styles.container}>
       {currentScreen === 'Login' ? (
         <Login navigation={navigation} />
-      ) : (
+      ) : currentScreen === 'Signup' ? (
         <Signup navigation={navigation} />
+      ) : (
+        <Todo navigation={navigation} />
       )}
     </View>
   );

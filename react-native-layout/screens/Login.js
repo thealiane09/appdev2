@@ -49,7 +49,6 @@ export default function Login({ navigation }) {
           />
         </View>
 
-        {/* Password Input */}
         <View style={styles.inputWrapper}>
           <Ionicons name="lock-closed-outline" size={20} color="#888" style={styles.inputIcon} />
           <TextInput
@@ -69,13 +68,14 @@ export default function Login({ navigation }) {
           </TouchableOpacity>
         </View>
 
-        {/* Forgot Password */}
         <TouchableOpacity style={styles.forgotWrapper}>
           <Text style={styles.forgotText}>Forgot Password?</Text>
         </TouchableOpacity>
 
-        {/* Login Button */}
-        <TouchableOpacity style={styles.loginButton}>
+        <TouchableOpacity 
+          style={styles.loginButton}
+          onPress={() => navigation && navigation.navigate('Todo')}
+        >
           <Ionicons name="log-in-outline" size={20} color="#fff" style={{ marginRight: 8 }} />
           <Text style={styles.loginButtonText}>Login</Text>
         </TouchableOpacity>
